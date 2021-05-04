@@ -1,0 +1,149 @@
+@media screen and (max-width: 720px) {
+    .flex-container div {
+        width: 100%;
+        flex-flow: column wrap;
+        }
+    }
+* {
+    box-sizing: border-box;
+    }
+
+body {
+    padding: 20px;
+    max-width: 1920px;
+    margin: auto;
+    background: url(https://wallpaperaccess.com/full/2155719.jpg);
+    font-family: Garamond;}
+
+html {
+    font-size: 16px;
+}
+
+
+.flex-container {
+    display: flex; 
+    flex-wrap: wrap;
+    margin: 0 auto;
+    
+    }
+
+
+    /*Headeris*/
+.flex-item1 {
+    width: 100%;
+    background-color: lightgray;
+    padding: 30px;
+    text-align: center;
+    
+    }
+    
+    /*Navigation*/
+    a {
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .area {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: stretch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar-component {
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.16), 0 2px 10px rgba(0,0,0,0.12);
+    }
+
+    .navbar-component > .navbar {
+        justify-content: space-between;
+    }
+
+
+    .navbar .item{
+        height: 64px;
+        line-height: 64px;
+        padding-left: 22px;
+        padding-right: 22px;
+        text-transform: uppercase;
+        color: #555;
+        font-size: 0.875rem
+    }
+
+    .navbar .item.-link {
+        line-height: 68px;
+        color:#555;
+        border-bottom: 4px solid transparent;
+        padding-bottom: 22px;
+    }
+
+    .navbar .item.-link:hover {
+        color:#333;
+        border-bottom-color: #673ab7 ;
+    }
+    .navbar.-right{
+        display: block;
+        font-size: 0.875rem;
+        color: #777;
+        
+    }
+
+
+    /*Footeris*/
+.flex-item8 {
+    width: 100%;
+    background-color: gray;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.75rem;
+    }
+
+
+    /*Kairiniai blokai*/
+.left {
+    width: 75%;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    }
+
+
+    /*Desininiai blokai*/
+.right {
+    width: 23%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    }
+
+
+
+[class*='flex-item']:not(.flex-item1, .flex-item8) {
+    background-color: white; 
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px lightslategray;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
